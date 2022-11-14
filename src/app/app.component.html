@@ -6,7 +6,7 @@
       >
     </li>
 
-    <ng-container *ngFor="let image of images; let i = index">
+    <ng-container *appTimes="images.length; let i = index">
       <li
         class="page-item"
         [ngClass]="{ active: i === currentPage }"
@@ -36,3 +36,7 @@
 <!-- <div [ngSwitch]="currentPage">
   <div *ngSwitchCase="2">currentPage is</div>
 </div> -->
+
+<!-- <ul *appTimes="5">
+  <li>Hi there</li>
+</ul> -->
